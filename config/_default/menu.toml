@@ -5,7 +5,7 @@ name = "首页"
 url = "/"
 [main.params]
 icon = "home"
-newtab = true
+weight = 1
 
 [[social]]
     identifier = "github"
