@@ -1,29 +1,4 @@
-# 主菜单（替换原英文为中文）
-[[main]]
-  identifier = "home"
-  name = "首页"
-  url = "/"
-  weight = 10
-
-[[main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
-  weight = 20
-
-[[main]]
-  identifier = "search"
-  name = "搜索"
-  url = "/search/"
-  weight = 30
-
-[[main]]
-  identifier = "links"
-  name = "链接"
-  url = "/links/"
-  weight = 40
-
-# 社交菜单（保留原github/twitter）
+# 只保留社交菜单
 [[social]]
   identifier = "github"
   name = "GitHub"
