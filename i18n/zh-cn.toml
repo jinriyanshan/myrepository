@@ -1,3 +1,4 @@
+# 侧边栏导航核心翻译（改完这里，Home/Archives等必变中文）
 [home]
   other = "首页"
 
@@ -9,3 +10,40 @@
 
 [links]
   other = "链接"
+
+# 以下是主题其他常用中文翻译（顺带改了，避免后续其他地方出英文）
+[recentPosts]
+  other = "最新文章"
+
+[categories]
+  other = "分类"
+
+[tags]
+  other = "标签"
+
+[tagCloud]
+  other = "标签云"
+
+[createdAt]
+  other = "发布于"
+
+[updatedAt]
+  other = "更新于"
+
+[readingTime]
+  other = "阅读时间"
+
+[wordsCount]
+  other = "字数"
+
+[author]
+  other = "作者"
+
+[relatedPosts]
+  other = "相关文章"
+
+[backToTop]
+  other = "回到顶部"
+
+[comments]
+  other = "评论"
