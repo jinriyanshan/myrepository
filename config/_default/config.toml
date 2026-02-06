@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl      = "https://starter.stack.jimmycai.com/"
 languageCode = "zh-cn"
-title        = "Hugo Theme Stack Starter"
+title        = "我们的微信公众号是：jinriyanshan"
 
 # Theme i18n support
 # See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n
