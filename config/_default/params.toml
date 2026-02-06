@@ -1,8 +1,8 @@
-# 网站图标（暂时留空或指向你的logo）
+# 网站图标
 favicon = "img/jryslogo.jpg"
 
 [footer]
-    since = 2024
+    # 删掉 since 这一行，年份就不会显示了
     customText = "今日燕山 - 燕山人的精神家园"
 
 [sidebar]
@@ -13,10 +13,10 @@ favicon = "img/jryslogo.jpg"
 [article]
     readingTime = false
     [article.license]
-        enabled = false
+        enabled = false  # 关闭文章底部的英文授权
 
 [colorScheme]
-    toggle = false
+    toggle = false      # 彻底关掉切换按钮
     default = "auto"
 
 [widgets]
