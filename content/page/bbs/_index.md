@@ -1,6 +1,6 @@
 ---
 title: "燕山论坛"
-layout: "page"
+layout: "post"
 comments: true
 ---
 
