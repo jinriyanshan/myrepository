@@ -29,3 +29,11 @@
     weight = 4
     [main.params]
         icon = "link"
+
+[[main]]
+    identifier = "bbs"
+    name = "燕山论坛"
+    url = "https://github.com/jinriyanshan/ystoday/discussions"
+    weight = 5
+    [main.params]
+        icon = "messages"
