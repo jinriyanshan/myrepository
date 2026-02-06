@@ -1,28 +1,31 @@
 [[main]]
+    name = "Home"
     identifier = "home"
-    name = "首页"
     url = "/"
-    weight = 1
+    weight = 10
+    [main.params]
+        icon = "home"
 
 [[main]]
+    name = "Archives"
     identifier = "archives"
-    name = "归档"
     url = "/archives/"
-    weight = 2
+    weight = 20
+    [main.params]
+        icon = "archive"
 
 [[main]]
+    name = "Search"
     identifier = "search"
-    name = "搜索"
     url = "/search/"
-    weight = 3
+    weight = 30
+    [main.params]
+        icon = "search"
 
 [[main]]
+    name = "Links"
     identifier = "links"
-    name = "链接"
     url = "/links/"
-    weight = 4
-
-[[social]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/jinriyanshan"
+    weight = 40
+    [main.params]
+        icon = "link"
