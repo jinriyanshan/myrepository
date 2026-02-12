@@ -1,4 +1,4 @@
-# config/_default/menus.toml
+# 只保留首页、链接、燕山论坛、软件下载，删掉搜索和归档
 [[main]]
 identifier = "home"
 name = "首页"
@@ -8,26 +8,10 @@ weight = 1
 icon = "home"
 
 [[main]]
-identifier = "archives"
-name = "归档"
-url = "/archives/"
-weight = 2
-[main.params]
-icon = "archives"
-
-[[main]]
-identifier = "search"
-name = "搜索"
-url = "/search/"
-weight = 3
-[main.params]
-icon = "search"
-
-[[main]]
 identifier = "links"
 name = "链接"
 url = "/links/"
-weight = 4
+weight = 2  # 权重调整，保持顺序连贯
 [main.params]
 icon = "link"
 
@@ -35,7 +19,7 @@ icon = "link"
 identifier = "bbs"
 name = "燕山论坛"
 url = "/page/bbs"
-weight = 5
+weight = 3
 [main.params]
 icon = "messages"
 
@@ -43,6 +27,6 @@ icon = "messages"
 identifier = "download"
 name = "软件下载"
 url = "/page/download"
-weight = 6
+weight = 4
 [main.params]
-icon = "download"
+icon = "cloud"  # 临时用cloud图标，避开download.svg缺失的问题
