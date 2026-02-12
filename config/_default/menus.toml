@@ -9,7 +9,7 @@ icon = "home"
 
 [[main]]
 identifier = "links"
-name = "链接"
+name = "友情链接"
 url = "/links/"
 weight = 2  # 权重调整，保持顺序连贯
 [main.params]
@@ -29,4 +29,4 @@ name = "软件下载"
 url = "/page/download"
 weight = 4
 [main.params]
-icon = "download"  # 临时用cloud图标，避开download.svg缺失的问题
+icon = "download"
