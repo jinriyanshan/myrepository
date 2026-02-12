@@ -1,0 +1,48 @@
+# config/_default/menus.toml
+[[main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
+[main.params]
+icon = "home"
+
+[[main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 2
+[main.params]
+icon = "archives"
+
+[[main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 3
+[main.params]
+icon = "search"
+
+[[main]]
+identifier = "links"
+name = "链接"
+url = "/links/"
+weight = 4
+[main.params]
+icon = "link"
+
+[[main]]
+identifier = "bbs"
+name = "燕山论坛"
+url = "/page/bbs"
+weight = 5
+[main.params]
+icon = "messages"
+
+[[main]]
+identifier = "download"
+name = "软件下载"
+url = "/page/download"
+weight = 6
+[main.params]
+icon = "download"
