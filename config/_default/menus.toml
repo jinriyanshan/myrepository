@@ -29,4 +29,4 @@ name = "旧物时光"
 url = "/page/jiuwu/"   # 确保这里和你的文件夹名称一致，并带上斜杠
 weight = 4             # 权重决定排序，你可以根据需要调整
 [main.params]
-icon = "download"  # 如果你的主题支持图标，可以选一个购物袋图标
+icon = "shopping-bag"  # 购物袋图标
