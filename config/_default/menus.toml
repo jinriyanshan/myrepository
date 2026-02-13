@@ -11,7 +11,7 @@ icon = "home"
 identifier = "links"
 name = "友情链接"
 url = "/links/"
-weight = 2  # 权重调整，保持顺序连贯
+weight = 5  # 权重调整，保持顺序连贯
 [main.params]
 icon = "link"
 
@@ -27,7 +27,7 @@ icon = "messages"
 identifier = "jiuwu"
 name = "旧物时光"
 url = "/page/jiuwu/"   # 确保这里和你的文件夹名称一致，并带上斜杠
-weight = 4             # 权重决定排序，你可以根据需要调整
+weight = 2             # 权重决定排序，你可以根据需要调整
 [main.params]
 icon = "shopping-bag"  # 购物袋图标
 
@@ -35,6 +35,6 @@ icon = "shopping-bag"  # 购物袋图标
 identifier = "phonebook"
 name = "电话黄页"
 url = "/page/phonebook/"
-weight = 5                 # 紧跟在旧物时光（weight 4）后面
+weight = 4                 # 紧跟在旧物时光（weight 4）后面
 [main.params]
 icon = "phone"             # 使用电话图标
