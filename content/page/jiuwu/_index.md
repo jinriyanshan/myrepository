@@ -1,7 +1,7 @@
 ---
 title: "旧物时光"
 date: 2026-02-13
-layout: "single"  <-- 添加这一行
+layout: "single"
 comments: true
 ---
 
