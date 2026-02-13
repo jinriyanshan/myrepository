@@ -34,7 +34,7 @@ icon = "shopping-bag"  # 购物袋图标
 [[main]]
 identifier = "phonebook"
 name = "电话黄页"
-url = "/page/phonebook.html"
+url = "/page/phonebook/"
 weight = 5                 # 紧跟在旧物时光（weight 4）后面
 [main.params]
 icon = "phone"             # 使用电话图标
