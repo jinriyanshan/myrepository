@@ -3,12 +3,12 @@ favicon = "img/jryslogo.jpg"
 
 [footer]
     # 删掉 since 这一行，年份就不会显示了
-    customText = "今日燕山 - 燕山人的精神家园"
+    customText = "燕山旧时光"
 
 [sidebar]
     emoji = ""
-    subtitle = "致力于燕房地区的咨询沟通，深度挖掘燕山独特的历史文化，以燕山的视角看世界，以世界的眼光看燕山！"
-    avatar = "img/jryslogo.jpg" 
+    subtitle = "回望过去，憧憬未来......"
+    avatar = "img/cat1.jpg" 
 
 [article]
     readingTime = false
