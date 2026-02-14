@@ -1,12 +1,13 @@
 [
-    {{- range $index, $page := .Site.AllPages -}}
-    {{- if and (ne $page.Kind "section") (ne $page.Layout "search") (ne $page.Layout "archives") -}}
-    {{- if $index -}},{{- end -}}
-    {
-        "title": {{ $page.Title | jsonify }},
-        "content": {{ $page.Plain | jsonify }},
-        "permalink": {{ $page.Permalink | jsonify }}
-    }
+    {{- $entries := slice -}}
+    {{- range .Site.AllPages -}}
+        {{- if and (ne .Kind "section") (ne .Layout "search") (ne .Layout "archives") (ne .Title "") -}}
+            {{- $entry := dict "title" .Title "content" .Plain "permalink" .Permalink -}}
+            {{- $entries = $entries | append $entry -}}
+        {{- end -}}
     {{- end -}}
+    {{- range $index, $entry := $entries -}}
+        {{- if $index -}},{{- end -}}
+        {{- $entry | jsonify -}}
     {{- end -}}
 ]
