@@ -1,9 +1,10 @@
 [
     {{- $entries := slice -}}
-    {{- range .Site.AllPages -}}
-        {{- if and (ne .Kind "section") (ne .Layout "search") (ne .Layout "archives") (ne .Title "") -}}
-            {{- $content := .RawContent -}}
-            {{- $entry := dict "title" .Title "content" $content "permalink" .Permalink -}}
+    {{- /* 既扫描普通页面，也扫描目录页面 */ -}}
+    {{- range .Site.Pages -}}
+        {{- if and (not .Draft) (ne .Layout "search") (ne .Title "") -}}
+            {{- /* 这里的 .Plain 会强制抓取 _index.md 里的文字 */ -}}
+            {{- $entry := dict "title" .Title "content" .Plain "permalink" .Permalink -}}
             {{- $entries = $entries | append $entry -}}
         {{- end -}}
     {{- end -}}
