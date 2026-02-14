@@ -2,7 +2,8 @@
     {{- $entries := slice -}}
     {{- range .Site.AllPages -}}
         {{- if and (ne .Kind "section") (ne .Layout "search") (ne .Layout "archives") (ne .Title "") -}}
-            {{- $entry := dict "title" .Title "content" .Plain "permalink" .Permalink -}}
+            {{- $content := .RawContent -}}
+            {{- $entry := dict "title" .Title "content" $content "permalink" .Permalink -}}
             {{- $entries = $entries | append $entry -}}
         {{- end -}}
     {{- end -}}
