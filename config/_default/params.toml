@@ -20,7 +20,7 @@ favicon = "img/jryslogo.jpg"
 
 [widgets]
     homepage = [
-        { type = "search" },
+        { type = "search" },  # 启用搜索组件
         { type = "archives", params = { limit = 5 } }
     ]
     page = [{ type = "toc" }]
@@ -40,40 +40,17 @@ favicon = "img/jryslogo.jpg"
         emitMetadata = "0"
         inputPosition = "bottom"
         theme = "preferred_color_scheme"
-        lang = "zh-CN"
+        lang: "zh-CN"
 
-# 超极简 Artalk 配置（无任何依赖，直接显示）
-customHead = '''
-<!-- Artalk 核心文件 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/artalk@2/dist/Artalk.css">
-<script src="https://cdn.jsdelivr.net/npm/artalk@2/dist/Artalk.js"></script>
+# 清空 customHead，避免冲突
+customHead = ''''''
 
-<!-- 评论区容器（直接写在页面里，强制显示） -->
-<div id="artalk-simple" style="
-  display: block !important;
-  margin: 50px auto;
-  padding: 20px;
-  max-width: 800px;
-  width: 90%;
-  border: 2px solid #000;
-"></div>
+# 站内搜索配置
+[outputs]
+    home = ["HTML", "RSS", "JSON"]  # 生成 JSON 索引文件
 
-<!-- 最简初始化代码 -->
-<script>
-// 页面加载后立刻执行
-window.onload = function() {
-  // 手动创建 Artalk 实例，不依赖任何框架
-  new Artalk({
-    el: document.getElementById('artalk-simple'),
-    server: 'https://artalk.artalkjs.org',
-    site: '燕山旧时光',
-    // 只保留最核心的中文配置
-    locale: {
-      nick: '你的名字',
-      submit: '发送评论',
-      placeholder: '在这里留言～'
-    }
-  });
-};
-</script>
-'''
+[outputFormats]
+    [outputFormats.JSON]
+        baseName = "index"
+        isPlainText = true
+        mediaType = "application/json"
