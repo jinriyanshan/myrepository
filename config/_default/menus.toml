@@ -41,7 +41,7 @@
 # 找回搜索按钮
 [[main]]
     identifier = "search"
-    name = "搜索"
+    name = "站内搜索"
     url = "/search/"
     weight = 6
     [main.params]
