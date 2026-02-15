@@ -1,5 +1,5 @@
 # 网站图标
-favicon = "img/jryslogo.jpg"
+favicon = "img/cat1.jpg"
 
 [footer]
     customText = "燕山旧时光"
@@ -26,7 +26,7 @@ favicon = "img/jryslogo.jpg"
     page = [{ type = "toc" }]
 
 [comments]
-    enabled  = false
+    enabled  = true
     provider = "giscus"
 
     [comments.giscus]
